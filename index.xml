@@ -34,15 +34,20 @@
     
     <item>
       <title>Real-Time Idling Vehicles Detection Using Combined Audio-Visual Deep Learning</title>
-      <link>https://lix4.github.io/publication/preprint/</link>
-      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://lix4.github.io/publication/preprint/</guid>
+      <link>https://lix4.github.io/publication/conference-paper/</link>
+      <pubDate>Mon, 18 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://lix4.github.io/publication/conference-paper/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    &lt;!-- Create your slides in Markdown - click the *Slides* button to check out the example. --&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -230,7 +235,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-654812793&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-728561394&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -240,7 +245,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-654812793&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-728561394&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -745,30 +750,792 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>An example conference paper</title>
-      <link>https://lix4.github.io/publication/conference-paper/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://lix4.github.io/publication/conference-paper/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title></title>
       <link>https://lix4.github.io/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://lix4.github.io/admin/config.yml</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lix4.github.io/slides/icitt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lix4.github.io/slides/icitt/</guid>
+      <description>&lt;h1 id=&#34;real-time-idling-vehicles-detection&#34;&gt;Real-Time Idling Vehicles Detection&lt;/h1&gt;
+&lt;p&gt;Using Combined Audio-Visual Deep Learning&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Xiwen Li&lt;/strong&gt;  &lt;strong&gt;1&lt;/strong&gt;  &lt;strong&gt;, Tristalee Mangin&lt;/strong&gt;  &lt;strong&gt;2&lt;/strong&gt;  &lt;strong&gt;, Surojit Saha&lt;/strong&gt;  &lt;strong&gt;1&lt;/strong&gt;  &lt;strong&gt;, Mohammed Rehman&lt;/strong&gt;  &lt;strong&gt;1&lt;/strong&gt;  &lt;strong&gt;, Evan Blanchard&lt;/strong&gt;  &lt;strong&gt;2&lt;/strong&gt;  __, __&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dillon Tang&lt;/strong&gt;  &lt;strong&gt;2&lt;/strong&gt;  &lt;strong&gt;, Henry Poppe&lt;/strong&gt;  &lt;strong&gt;2&lt;/strong&gt;  &lt;strong&gt;, Ouk Choi&lt;/strong&gt;  &lt;strong&gt;3&lt;/strong&gt;  &lt;strong&gt;, Kerry Kelly&lt;/strong&gt;  &lt;strong&gt;2&lt;/strong&gt;  &lt;strong&gt;, Ross Whitaker&lt;/strong&gt;  &lt;strong&gt;1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt;  &lt;strong&gt;Scientific Computing and Imaging Institute, University of Utah&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2&lt;/strong&gt;  &lt;strong&gt;Department of Chemical Engineering, University of Utah&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3&lt;/strong&gt;  &lt;strong&gt;Incheon National University&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%2020230.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%2020231.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%2020232.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;motivation-why-it-is-a-problem&#34;&gt;Motivation: Why it is a problem?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Health Concern: vulnerable populations&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Commercial Waste: fleet idling&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;__Global Warming: greenhouse gas __&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%2020233.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%2020234.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%2020235.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Shorten sentences
+Roadways such as schools and hospital drop-off zones, where idling vehicles congregate, produce increased air pollution to
+such as long-haul idling trucks at depot/delivery centers, causes wasted fuel and engine wear&lt;/p&gt;
+&lt;h1 id=&#34;motivation-inspiration&#34;&gt;Motivation: Inspiration&lt;/h1&gt;
+&lt;p&gt;__Similar application: Dynamic speed display __&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%2020236.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%2020237.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%2020238.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Motivated by effectiveness of dynamic speed sign&lt;/p&gt;
+&lt;h1 id=&#34;motivation-its-cycle&#34;&gt;Motivation: ITS cycle&lt;/h1&gt;
+&lt;p&gt;We design an intelligent transportation system (ITS) to show dynamic messaging&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%2020239.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;previous-work-infrared-imaging-idling-vehicle-detection-ivd&#34;&gt;Previous Work: Infrared-imaging Idling Vehicle Detection (IVD)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Detects idling vehicles on a heatmap sequence using Faster R-CNN&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Limitations:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;High latency&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Environment effect&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vehicle Orientation&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Expensive and not deployable&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202310.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;problem-definition&#34;&gt;Problem Definition&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Vehicle status     :&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;__        : A vehicle is moving__&lt;/li&gt;
+&lt;li&gt;__    : A static vehicle with engine off__&lt;/li&gt;
+&lt;li&gt;__      : A static vehicle with engine on__&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Given a video      visually containing vehicles                                and audio clips                                at the same moment, our model estimates a bounding box        and&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202311.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202312.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202313.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202314.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202315.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202316.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202317.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202318.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202319.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202320.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;method&#34;&gt;Method&lt;/h1&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202321.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;experiments-dataset&#34;&gt;Experiments: Dataset&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;We annotated video and audio separately&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vehicle Motion Dataset&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Clip length: 16&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Training: 33015 clips&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validation: 8252 clips&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Test: 13271 clips&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Audio Classification&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sample duration: 5 seconds&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Training: positive 8721 negative 30618&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validation: positive 2491 negative 8245&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sample rate: 48000Hz&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Reduce info&lt;/p&gt;
+&lt;h1 id=&#34;experiments-motion-detector&#34;&gt;Experiments: Motion Detector&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;The trained vehicle motion detector is capable of localizing vehicle motion on unseen data&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202322.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;experiments-audio-classifier&#34;&gt;Experiments: Audio Classifier&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Fix groundtruth motion bounding box and only estimate audio classification&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We observed false positives caused by loud noise makers and parallel moving vehicles&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202323.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;experiments-audio-visual-combined-performance&#34;&gt;Experiments: Audio-Visual Combined Performance&lt;/h1&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202324.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202325.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202326.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;experiments-real-time-deployment&#34;&gt;Experiments: Real-Time Deployment&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Smoothing prediction: window majority voting&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We deploy for 14 days at a hospital*&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Monitor Accuracy:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202327.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Has No Idle Cases (Accuracy)&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Has Idle Cases (Accuracy)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;08.02.23&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;94.9%&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;68.0%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;08.01.23&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;96.1%&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;77.0%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;08.04.23&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;98.1%&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;91.0%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;08.07.23&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;98.2%&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;77.8%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;08.11.23&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;97.1%&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;77.1%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;08.14.23&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;97.2%&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;80.9%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;* LDS Hospital:  &lt;strong&gt;8th Avenue, C St E, Salt Lake City, UT 84143, USA&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;We built an algorithm and ITS to detect idling vehicles&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We will test it at more locations to generalize the system&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202328.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202329.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img%5CCopy%20of%20ICITT%20202330.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
     </item>
     
   </channel>

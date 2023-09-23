@@ -5,7 +5,7 @@
     <link>https://lix4.github.io/publication/</link>
       <atom:link href="https://lix4.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 22 May 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 18 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://lix4.github.io/media/icon_hu23cbb17adfc66b12ec540fcac53dde6a_1008_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -14,23 +14,9 @@
     
     <item>
       <title>Real-Time Idling Vehicles Detection Using Combined Audio-Visual Deep Learning</title>
-      <link>https://lix4.github.io/publication/preprint/</link>
-      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://lix4.github.io/publication/preprint/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    &lt;!-- Create your slides in Markdown - click the *Slides* button to check out the example. --&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example journal article</title>
-      <link>https://lix4.github.io/publication/journal-article/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://lix4.github.io/publication/journal-article/</guid>
+      <link>https://lix4.github.io/publication/conference-paper/</link>
+      <pubDate>Mon, 18 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://lix4.github.io/publication/conference-paper/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -46,10 +32,10 @@
     </item>
     
     <item>
-      <title>An example conference paper</title>
-      <link>https://lix4.github.io/publication/conference-paper/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://lix4.github.io/publication/conference-paper/</guid>
+      <title>An example journal article</title>
+      <link>https://lix4.github.io/publication/journal-article/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://lix4.github.io/publication/journal-article/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.

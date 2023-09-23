@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+
+  
+    <link rel="manifest" href="/manifest.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu23cbb17adfc66b12ec540fcac53dde6a_1008_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu23cbb17adfc66b12ec540fcac53dde6a_1008_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://lix4.github.io/slides/icitt/">
+
+  <title> | Xiwen Li 李习文</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.min.css">
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css">
+  
+
+  
+  
+  
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <h1 id="real-time-idling-vehicles-detection">Real-Time Idling Vehicles Detection</h1>
+<p>Using Combined Audio-Visual Deep Learning</p>
+<p><strong>Xiwen Li</strong>  <strong>1</strong>  <strong>, Tristalee Mangin</strong>  <strong>2</strong>  <strong>, Surojit Saha</strong>  <strong>1</strong>  <strong>, Mohammed Rehman</strong>  <strong>1</strong>  <strong>, Evan Blanchard</strong>  <strong>2</strong>  __, __</p>
+<p><strong>Dillon Tang</strong>  <strong>2</strong>  <strong>, Henry Poppe</strong>  <strong>2</strong>  <strong>, Ouk Choi</strong>  <strong>3</strong>  <strong>, Kerry Kelly</strong>  <strong>2</strong>  <strong>, Ross Whitaker</strong>  <strong>1</strong></p>
+<p><strong>1</strong>  <strong>Scientific Computing and Imaging Institute, University of Utah</strong></p>
+<p><strong>2</strong>  <strong>Department of Chemical Engineering, University of Utah</strong></p>
+<p><strong>3</strong>  <strong>Incheon National University</strong></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%2020230.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%2020231.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%2020232.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h1 id="motivation-why-it-is-a-problem">Motivation: Why it is a problem?</h1>
+<p><strong>Health Concern: vulnerable populations</strong></p>
+<p><strong>Commercial Waste: fleet idling</strong></p>
+<p>__Global Warming: greenhouse gas __</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%2020233.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%2020234.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%2020235.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>Shorten sentences
+Roadways such as schools and hospital drop-off zones, where idling vehicles congregate, produce increased air pollution to
+such as long-haul idling trucks at depot/delivery centers, causes wasted fuel and engine wear</p>
+<h1 id="motivation-inspiration">Motivation: Inspiration</h1>
+<p>__Similar application: Dynamic speed display __</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%2020236.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%2020237.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%2020238.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>Motivated by effectiveness of dynamic speed sign</p>
+<h1 id="motivation-its-cycle">Motivation: ITS cycle</h1>
+<p>We design an intelligent transportation system (ITS) to show dynamic messaging</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%2020239.jpg" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h1 id="previous-work-infrared-imaging-idling-vehicle-detection-ivd">Previous Work: Infrared-imaging Idling Vehicle Detection (IVD)</h1>
+<ul>
+<li>Detects idling vehicles on a heatmap sequence using Faster R-CNN</li>
+<li><strong>Limitations:</strong>
+<ul>
+<li><strong>High latency</strong></li>
+<li><strong>Environment effect</strong></li>
+<li><strong>Vehicle Orientation</strong></li>
+<li><strong>Expensive and not deployable</strong></li>
+</ul>
+</li>
+</ul>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202310.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h1 id="problem-definition">Problem Definition</h1>
+<ul>
+<li><strong>Vehicle status     :</strong>
+<ul>
+<li>__        : A vehicle is moving__</li>
+<li>__    : A static vehicle with engine off__</li>
+<li>__      : A static vehicle with engine on__</li>
+</ul>
+</li>
+<li><strong>Given a video      visually containing vehicles                                and audio clips                                at the same moment, our model estimates a bounding box        and</strong></li>
+</ul>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202311.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202312.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202313.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202314.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202315.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202316.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202317.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202318.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202319.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202320.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h1 id="method">Method</h1>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202321.jpg" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h1 id="experiments-dataset">Experiments: Dataset</h1>
+<ul>
+<li><strong>We annotated video and audio separately</strong></li>
+<li><strong>Vehicle Motion Dataset</strong>
+<ul>
+<li><strong>Clip length: 16</strong></li>
+<li><strong>Training: 33015 clips</strong></li>
+<li><strong>Validation: 8252 clips</strong></li>
+<li><strong>Test: 13271 clips</strong></li>
+</ul>
+</li>
+<li><strong>Audio Classification</strong>
+<ul>
+<li><strong>Sample duration: 5 seconds</strong></li>
+<li><strong>Training: positive 8721 negative 30618</strong></li>
+<li><strong>Validation: positive 2491 negative 8245</strong></li>
+<li><strong>Sample rate: 48000Hz</strong></li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<p>Reduce info</p>
+<h1 id="experiments-motion-detector">Experiments: Motion Detector</h1>
+<p><strong>The trained vehicle motion detector is capable of localizing vehicle motion on unseen data</strong></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202322.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h1 id="experiments-audio-classifier">Experiments: Audio Classifier</h1>
+<p><strong>Fix groundtruth motion bounding box and only estimate audio classification</strong></p>
+<p><strong>We observed false positives caused by loud noise makers and parallel moving vehicles</strong></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202323.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h1 id="experiments-audio-visual-combined-performance">Experiments: Audio-Visual Combined Performance</h1>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202324.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202325.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202326.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h1 id="experiments-real-time-deployment">Experiments: Real-Time Deployment</h1>
+<p><strong>Smoothing prediction: window majority voting</strong></p>
+<p><strong>We deploy for 14 days at a hospital*</strong></p>
+<p><strong>Monitor Accuracy:</strong></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202327.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">Has No Idle Cases (Accuracy)</th>
+<th style="text-align:center">Has Idle Cases (Accuracy)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">08.02.23</td>
+<td style="text-align:center">94.9%</td>
+<td style="text-align:center">68.0%</td>
+</tr>
+<tr>
+<td style="text-align:center">08.01.23</td>
+<td style="text-align:center">96.1%</td>
+<td style="text-align:center">77.0%</td>
+</tr>
+<tr>
+<td style="text-align:center">08.04.23</td>
+<td style="text-align:center">98.1%</td>
+<td style="text-align:center">91.0%</td>
+</tr>
+<tr>
+<td style="text-align:center">08.07.23</td>
+<td style="text-align:center">98.2%</td>
+<td style="text-align:center">77.8%</td>
+</tr>
+<tr>
+<td style="text-align:center">08.11.23</td>
+<td style="text-align:center">97.1%</td>
+<td style="text-align:center">77.1%</td>
+</tr>
+<tr>
+<td style="text-align:center">08.14.23</td>
+<td style="text-align:center">97.2%</td>
+<td style="text-align:center">80.9%</td>
+</tr>
+</tbody>
+</table>
+<p>* LDS Hospital:  <strong>8th Avenue, C St E, Salt Lake City, UT 84143, USA</strong></p>
+<h1 id="conclusion">Conclusion</h1>
+<p><strong>We built an algorithm and ITS to detect idling vehicles</strong></p>
+<p><strong>We will test it at more locations to generalize the system</strong></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202328.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202329.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="img%5CCopy%20of%20ICITT%20202330.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+
+  
+  
+
+  
+  
+  <script src="/js/wowchemy-slides.js"></script>
+
+</body>
+</html>
